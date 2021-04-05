@@ -1,28 +1,13 @@
-html, body{
-    height: 100%;
-    margin: 0;
+body {
+    background-color: #F8EFD3;
 }
-
-.wrapper{
-    min-height: 100%;
-    margin-bottom: -50px;
-}
-body{
-    background-color:#F8EFD3;
-}
-
-#headshot{
-    margin-left: 10%;
-    margin-top: 85px;
-    width:500px;
-    float: left;
-}
+ 
 #logo{
-    margin-left: 10%;
-      width: 199px;
-    height: 126.17px;
-    display: inline;
-   }
+   margin-left: 10%;
+     width: 199px;
+   height: 126.17px;
+   display: inline;
+ }
 
 ul {
     float: right;
@@ -38,94 +23,135 @@ li {
     font-size: small;
     font-weight: bold;
 }
+
 h1{
     font-family: alverata-irregular, serif;
     font-weight: 700;
     font-style: normal;
     font-size: 5rem;
     margin-left: 10%;
-    margin-top: 20px;
+    margin-top: 25px;
+    padding-bottom: 5%;
 }
 
 #secondline {
     text-decoration: underline;
     margin-top: 0;
-    margin-bottom: 50px;
-    margin-left: 50%;
 }
 
 h2 {
     font-family: gotham, sans-serif;
     font-style: normal;
     font-size: 18px;
-    text-transform: uppercase;
     margin-left: 10%;
-    font-weight: normal;
-    letter-spacing: 3px;
-    margin-top: 120px;
-}
-
-p {
-    font-family: gotham, sans-serif;
-    font-style: normal;
-    font-size: 18px;
-}
-
-   h3{
-    padding: 10px;
-    font-family: gotham, sans-serif;
+    margin-top: 85px;
     text-transform: uppercase;
-    font-size: medium;
-   }
+    letter-spacing: 3px;    
 
-   h4{
-    font-family: gotham, sans-serif;
-    font-style: normal;
-    font-size: 25px;
 }
-
 
 button{
-    background-color:#F8EFD3;
+font-family: gotham, sans-serif;
+text-transform: uppercase;
+font-size: normal;
+font-weight: 700;
+background-color: transparent;
+border: none;
+color: #F8EFD3;
+margin-bottom: 10%;
+width:100%;
+
+}
+
+button:hover{
+    color: #F8EFD3;
+    text-decoration: underline;
+    
+}
+
+button:focus {
+    outline: none;
+}
+.item1{
+    grid-area: 'main';
+    background: #00A651;
+}
+
+.item2{
+    background: #DA5227; 
+}
+
+.item3{
+    background: #231F20; 
+}
+
+.workGrid{
+    display: grid;
+    width:  100%;
+    height: 700px;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-areas: 'item1 item2 item3';
+    margin-right: 0;
+    margin-bottom: 100px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.gridImage:hover{
+    display: none;
+}
+
+
+
+h4{
+    color: #F8EFD3;
+    justify-self: center;
+    text-align: center;
     font-family: gotham, sans-serif;
     text-transform: uppercase;
-    font-size: medium;
-    font-weight: 700;
-    border-radius: 25px;
-    padding: 12px 35px;
-    border: 2px solid #231F20;
-    }
-    
-    button:hover{
-        background-color: #231F20;
-        color: #F8EFD3;
-    }
-    
-    button:focus {
-        outline: none;
-    }
-
-
-
-@media screen and (max-width: 915px) {
-    #navlist {
-        display: none;
-    }
+    font-size: small;
+    font-weight: bold;
+    margin-top: 10%;
+    margin-bottom: 25px;
+    line-height: 15px;
+}
+hr{
+    border-top: solid 2px #F8EFD3;
+    width:20%;
+    justify-self: center; 
 }
 
-@media screen and (max-width: 412px) {
-    h1 {
-        font-size: 35px;
-    }
-    #logo {
-        width: 132px;
-        height: 83.5px;
-    }
-    h2 {
-        font-size: 20px;
-    }
+p{
+    color: #F8EFD3;
+    justify-self: center;
+    text-align: center;
+    font-family: gotham, sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+    margin-top: 25px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 15px;
+    line-height: 20px;
 }
 
+/* .item1 { */
+    /* background-image: url("https://github.com/taraannbrooks/UX_UI_HW_17/blob/main/Assets/free%20floating%20iPad%20Pro%20with%20iPhone%2012%20mockup_homepage%20image.jpg?raw=true"); */
+    /* height: 100%; */
+    /* background-position: center; */
+    /* background-size: cover; */
+/* } */
+/*  */
+/* .item1:hover { */
+    /* background-image: url("https://github.com/taraannbrooks/UX_UI_HW_17/blob/8ed0ec54a71cff6723d6bb0fdffe48c332977d6e/Assets/MyWorkHoverImageRA.png?raw=true"); */
+    /* height: 100%; */
+    /* background-position: center; */
+    /* background-size: cover; */
+/* } */
+
+/* background-position: center; */
 /* navigation animations */
 a, a:hover {
     color: #000;
@@ -163,9 +189,10 @@ a, a:hover {
     align-items: baseline;
 }
 
-.footer {
+footer {
     background-color: #231F20;
     height: 120px;
+    margin-top: 1%;
 }
 
 #footernav {
@@ -177,4 +204,70 @@ a, a:hover {
     padding-bottom: 10px;
     margin-left: 0;
     margin-right: 0;
+}
+
+
+@media screen and (max-width: 1000px) {
+    #navlist {
+        display: none;
+    }
+}
+
+/* Tablet width */
+@media screen and (max-width: 780px) {
+    h1 {
+        font-size: 57px;
+    }
+    #logo {
+        width: 116px;
+        height: 73.8px;
+    }
+    h2 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    footer{
+        height: 80px;
+        margin-bottom: 0;
+    }
+    .footerinline{
+        margin-bottom: 3px;
+        padding-bottom: 0;
+        margin-top: 0;
+    }
+    #footerlogo{
+        margin-top: 20px;
+        width: 10%;
+    }
+}
+
+/* Phone width */
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 35px;
+    }
+    #logo {
+        width: 132px;
+        height: 83.5px;
+    }
+    h2 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    button{
+        margin-left: 62px;
+    }
+    .column{
+        width: 100%;
+    }
+
+    .projectImages{
+        height: 50%;
+    }
+
+    #footerlogo{
+        margin-top: 25px;
+        margin-left: 40px;
+        width: 15%;
+    }
 }
